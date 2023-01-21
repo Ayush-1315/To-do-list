@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+#icon{
+    font-size: 1.5rem;
+}
+header{
+    background-color: green;
+    /* max-height:10vh; */
+    width:100%;
+    color:yellow;
+    padding:1rem;
+    font-size: large;
+}
+header>h2{
+    margin-left:1rem;
+    display: inline-block;
+    
+}
+section{
+    height:90vh;
+    width:100%;
+}
+#nav{
+    display: flex;
+    background-color: red;
+    width:100%;
+    height:fit-content;
+    align-items: center;
+    justify-content: space-around;
+}
+.status{
+    border: 2px solid black;
+    width:33.3%;
+    padding:1rem;
+    cursor:pointer;
+}
+.status>h3{
+    text-align: center;
+}
+.status:hover{
+    background-color: aqua;
+}
+#displayList{
+    height: fit-content;
+    width:100%;
+    background-color: grey;
+}
+.displays:nth-child(2),.displays:nth-child(3){
+    display: none;
+}
+.displays{
+    height:100%;
+    background-color: aquamarine;
+}
+.listItem{
+    border:1px solid black;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.listItem:hover{
+    background-color: antiquewhite;
+}
+.close{
+    padding:.3rem 0.5rem;
+    border-radius: 50%;
+}
+.close:hover{
+    background-color: red;
+}
+#addBtn{
+    padding:0.5rem 1rem;
+    position: fixed;
+    bottom:1rem;
+    right:1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:white;
+    background-color: navy;
+    width:fit-content;
+    border-radius: 35%;
+}
+#addBtn:hover{
+    background-color: orangered;
+}
+#screen{
+    background-color: aqua;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#formContainer{
+    min-height:50vh;
+    border-radius: 0.3rem;
+    width:50vw;
+    background-color: white;
+}
