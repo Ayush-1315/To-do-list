@@ -4,9 +4,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 #icon{
     font-size: 1.5rem;
+    display: inline-block;
+    background-image: url("resource/logo.png");
+    /* background-color: red; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height:3rem;
+    width:3rem;
 }
 header{
     background-color: green;
@@ -70,6 +81,7 @@ section{
 .close{
     padding:.3rem 0.5rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 .close:hover{
     background-color: red;
@@ -102,8 +114,55 @@ section{
     display: none;
 }
 #formContainer{
-    min-height:50vh;
+    height:fit-content;
     border-radius: 0.3rem;
-    width:50vw;
+    max-width:50vw;
     background-color: white;
+    padding:1rem;
+}
+#formContainer>div:first-child{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+label,select{
+    display: block;
+}
+select,input[type="text"]{
+    padding:0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    border:1px solid grey;
+    margin:0.5rem 0rem;
+}
+input[type="reset"],input[type="submit"]{
+    padding:0.2rem 0.4rem;
+    border:2px solid black;
+    border-radius: 0.3rem;
+    color:wheat;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 8px 1px #c9c9c9,-2px -2px 8px 1px #c9c9c9;
+    margin:0.5rem 0;
+    cursor: pointer;
+}
+input[type="submit"]{
+    background-color: greenyellow;
+}
+input[type="reset"]{
+    background-color: red;
+}
+#form>div{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.error{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    padding:0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    display: none;
 }
